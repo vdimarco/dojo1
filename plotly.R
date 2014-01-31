@@ -7,6 +7,9 @@ library(plotly)
 #create your plotly function
 p <- plotly(username="your_username", key="your_key")
 
+#Load maps
+library(maps)
+data(canada.cities)
 
 #Create the hexagone map
 trace1 <- list(x=map(regions="canada")$x, 
